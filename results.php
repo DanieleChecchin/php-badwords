@@ -20,14 +20,20 @@
 <body>
     <main class="container">
         <h1 class="my-5">RESULTS:</h1>
-
+        
+        <!--Primo risultato-->
         <div class="mb-3">   
             <p class="fs-5 fw-bold">
                 Original Sentence: <span class="fw-normal"><?php echo $text; ?> </span>
                 Length: <span class="fw-normal"><?php echo strlen($text); ?></span>
             </p>
         </div>
-
-        <div class="fs-5 fw-bold">Edited Sentence:</div>
+        <!--Secondo risultato-->
+        <div class="mb-3">   
+            <p class="fs-5 fw-bold">
+                Edited Sentence: <span class="fw-normal"><?php echo str_ireplace('non', '***', $text); ?> </span>
+                Length: <span class="fw-normal"><?php echo strlen($text); ?></span>
+            </p>
+        </div>
     </main>
 </body>
